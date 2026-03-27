@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="initial">
+      <div class="logo-area">
+       <img
+       id="img_1"
+       src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'%3E%3Cpath d='M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2v14h14V5H5zm2 2h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z'
+       /%3E%3C/svg%3E" alt="Logo Technology Blog - ícone de linhas de código" >
+
+       <span class="blog-name">Technology Blog</span>
+      </div>
+    </nav>
+<section id="featured-post">
+        <div class="container">
+            <div class="post-destaque">
+                <div class="post-destaque-imagem">
+                    <img src="./assets/images/not.png" 
+                         alt="Notebook moderno com tela brilhante, representando os melhores lançamentos de 2026" 
+                         id="img_2"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=Notebook+Preview';">
+                </div>
+                <div class="post-destaque-conteudo">
+                    <h1 class="titulo-subject">Notebook: Guia definitivo 2026</h1>
+                    <p>Os melhores notebooks de 2026 focam em custo-benefício e alto desempenho, destacando-se o Samsung Galaxy Book4 (Pro/Ultra) (premium/ultrabook), ASUS Vivobook Go 15 (intermediário), Acer Nitro V15 (gamer), Apple MacBook Air M3/M4 (portabilidade) e Lenovo IdeaPad 1i/Slim 3 (estudo/trabalho). As principais escolhas oferecem SSDs rápidos, pelo menos 8GB/16GB de RAM e processadores modernos (Intel Core ou Ryzen 5/7).</p>
+                    <div class="post-metadata">
+                        <span class="badge-date">📅 25 de março, 2026</span>
+                        <span class="badge-category">💻 Hardware & Performance</span>
+                        <button class="read-more" id="readMoreBtn">Ler artigo completo →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- elemento decorativo sutil -->
+    <div class="divider-wave container" style="text-align: center; margin: 20px auto;">
+        <span style="font-size: 1.8rem; opacity: 0.3;">✦ ✦ ✦</span>
+    </div>
+
+    <section id="create-post">
+        <div id="container">
+            <div id="form-card">
+                <h2>✍️ Criar novo post</h2>
+                <p>Compartilhe suas ideias, dicas de tecnologia e experiências com a comunidade</p>
+            </div>
+            <form id="form-create-post">
+                <div class="form-group">
+                    <label for="input-tiulo">📌 Título do post</label>
+                    <input type="text"
+                           id="input-tiulo"
+                           name="titulo"
+                           placeholder="Ex: Por que escolhi um notebook com Linux?" 
+                           required>
+                </div>
+                <div class="form-group">
+                    <label for="input-conteudo">📝 Conteúdo</label>
+                    <textarea id="input-conteudo"
+                              name="conteudo"
+                              placeholder="Escreva seu post aqui... Compartilhe conhecimento, opiniões ou tutoriais."
+                              required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-submit" id="btn-submit-post">
+                        🚀 Publicar post
+                    </button>
+                </div>
+            </form>
+
+            <div class="render-area">
+                <h3>✨ Último post publicado</h3>
+                <div id="render-card">
+                    <h2 id="renderizador-titulo">---</h2>
+                    <p id="renderizador-conteudo">Aguardando publicação de um novo post...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<div id="container" style="text-align: center; margin: 20px auto;">
+    <span style="font-size: 1.8rem; opacity: 0.3;">✦ ✦ ✦</span>
+</div>
+
+<main>
+    <div class="container">
+        <div class="blog-header">
+            <h1>📡 Últimos posts da comunidade</h1>
+            <p>Consumindo API pública JSONPlaceholder — posts dinâmicos carregados automaticamente</p>
+        </div>
+        <div id="postsContainer" class="posts-container">
+            <div class="loader">
+                <div class="spinner"></div>
+                <span>Carregando artigos da API...</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>
+        ✨ Technology Blog | Consumindo API REST • Criando posts com POST • Dados via JSONPlaceholder!
+    </p>
+    <p style="margin-top: 8px;">
+            📢 Publique seu conteúdo e veja a resposta da API sendo renderizada instantaneamente!
+    </p>
+</footer>
+
+    
+</body>
+</html>
